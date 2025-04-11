@@ -1,0 +1,11 @@
+2025-04-11T16:28:29.155+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 16472 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-11T16:28:29.156+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-11T16:28:29.300+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-11T16:28:29.303+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-11T16:28:29.303+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-11T16:28:29.317+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-04-11T16:28:29.317+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 159 ms
+2025-04-11T16:28:29.386+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-11T16:28:29.392+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-11T16:28:29.396+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.275 seconds (process running for 7431.312)
+2025-04-11T16:28:29.398+02:00  INFO 16472 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
