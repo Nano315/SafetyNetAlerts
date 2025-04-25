@@ -13,3 +13,60 @@
 2025-04-25T13:40:42.344+02:00  INFO 19848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 19848 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
 2025-04-25T13:40:42.347+02:00  INFO 19848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
 2025-04-25T13:40:44.693+02:00  INFO 19848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 3.191 seconds (process running for 5.586)
+2025-04-25T13:52:54.288+02:00  INFO 34124 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 34124 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T13:52:54.292+02:00  INFO 34124 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T13:52:56.680+02:00  INFO 34124 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 3.165 seconds (process running for 5.773)
+2025-04-25T13:56:11.734+02:00  INFO 19212 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 19212 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T13:56:11.737+02:00  INFO 19212 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T13:56:14.240+02:00  INFO 19212 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 3.185 seconds (process running for 6.317)
+2025-04-25T14:07:53.960+02:00  INFO 33780 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 33780 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T14:07:53.965+02:00  INFO 33780 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T14:07:56.351+02:00  INFO 33780 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 3.085 seconds (process running for 5.725)
+2025-04-25T14:10:07.804+02:00  INFO 27416 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 27416 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T14:10:07.807+02:00  INFO 27416 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T14:10:10.206+02:00  INFO 27416 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 3.465 seconds (process running for 5.827)
+2025-04-25T14:16:13.086+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 34848 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T14:16:13.089+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T14:16:15.390+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 2.965 seconds (process running for 5.389)
+2025-04-25T14:16:17.353+02:00  WARN 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-04-25T14:16:17.374+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-04-25T14:16:17.386+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-04-25T14:16:17.398+02:00  WARN 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-04-25T14:16:17.411+02:00  INFO 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-04-25T14:16:17.418+02:00  WARN 34848 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-04-25T14:18:38.467+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 32684 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T14:18:38.470+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T14:18:40.595+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 2.983 seconds (process running for 5.71)
+2025-04-25T14:18:42.498+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-04-25T14:18:42.520+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-04-25T14:18:42.534+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-04-25T14:18:42.620+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-04-25T14:18:42.627+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-04-25T14:18:42.640+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-04-25T14:18:42.663+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Deleted medical record for John Boyd
+2025-04-25T14:18:42.714+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=03/03/1993, medications=[ganja:420mg], allergies=[]
+2025-04-25T14:18:42.749+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : No medical record found for Bob Marley. No deletion performed.
+2025-04-25T14:18:42.764+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for John Boyd already exists. No creation performed.
+2025-04-25T14:18:42.794+02:00  WARN 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for Alice Wonder not found. Update not performed.
+2025-04-25T14:18:42.813+02:00  INFO 32684 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Updating medical record for Jane Doe
+2025-04-25T14:21:41.107+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 34228 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-04-25T14:21:41.110+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-04-25T14:21:43.395+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 2.962 seconds (process running for 5.754)
+2025-04-25T14:21:45.691+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-04-25T14:21:45.721+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-04-25T14:21:45.732+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-04-25T14:21:45.759+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-04-25T14:21:45.770+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-04-25T14:21:45.797+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-04-25T14:21:45.861+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Deleted medical record for John Boyd
+2025-04-25T14:21:45.899+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=03/03/1993, medications=[ganja:420mg], allergies=[]
+2025-04-25T14:21:45.929+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : No medical record found for Bob Marley. No deletion performed.
+2025-04-25T14:21:45.948+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for John Boyd already exists. No creation performed.
+2025-04-25T14:21:45.974+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for Alice Wonder not found. Update not performed.
+2025-04-25T14:21:45.994+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Updating medical record for Jane Doe
+2025-04-25T14:21:46.027+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Added person: firstName=John, lastName=Doe, address=1 Main, city=City, zip=00000, phone=333, email=john@doe.com
+2025-04-25T14:21:46.040+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Updating person: Alice Cooper
+2025-04-25T14:21:46.049+02:00  INFO 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-04-25T14:21:46.050+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
+2025-04-25T14:21:46.080+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
+2025-04-25T14:21:46.117+02:00  WARN 34228 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.
