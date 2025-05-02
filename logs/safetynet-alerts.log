@@ -1306,3 +1306,89 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 2025-05-02T12:26:37.814+02:00  WARN 25392 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
 2025-05-02T12:26:37.827+02:00  WARN 25392 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
 2025-05-02T12:26:37.837+02:00  WARN 25392 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.
+2025-05-02T12:34:22.795+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Starting AlertControllerTest using Java 21.0.3 with PID 3648 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-02T12:34:22.797+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T12:34:25.628+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T12:34:25.629+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T12:34:25.630+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-02T12:34:25.682+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Started AlertControllerTest in 3.581 seconds (process running for 5.829)
+2025-05-02T12:34:25.909+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /flood/stations?stations=[1]
+2025-05-02T12:34:25.917+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => 1 household(s)
+2025-05-02T12:34:26.196+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /communityEmail?city=Culver
+2025-05-02T12:34:26.197+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => 2 email(s) found
+2025-05-02T12:34:26.209+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /personInfo?lastName=Boyd
+2025-05-02T12:34:26.209+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => 1 person(s) found
+2025-05-02T12:34:26.231+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /phoneAlert?firestation=1
+2025-05-02T12:34:26.232+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => 2 phone number(s) found
+2025-05-02T12:34:26.256+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /fire?address=1509 Culver St
+2025-05-02T12:34:26.257+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => stationNumber=1, 1 occupant(s)
+2025-05-02T12:34:26.279+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /childAlert?address=1509 Culver St
+2025-05-02T12:34:26.280+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Response => 1 child(ren) found
+2025-05-02T12:34:26.331+02:00  INFO 3648 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T12:34:26.379+02:00  INFO 3648 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.FirestationControllerTest
+2025-05-02T12:34:26.389+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-02T12:34:26.448+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Starting FirestationControllerTest using Java 21.0.3 with PID 3648 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-02T12:34:26.448+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T12:34:26.780+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T12:34:26.780+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T12:34:26.781+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-02T12:34:26.791+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Started FirestationControllerTest in 0.403 seconds (process running for 6.937)
+2025-05-02T12:34:26.882+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : PUT /firestation => address=1509 Culver St, new station=5
+2025-05-02T12:34:26.892+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : POST /firestation => adding address=1509 Culver St, station=1
+2025-05-02T12:34:26.903+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : DELETE /firestation?address=1509 Culver St
+2025-05-02T12:34:26.916+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : GET /firestation?stationNumber=1
+2025-05-02T12:34:26.917+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : Response => 2 persons, 1 adults, 1 children
+2025-05-02T12:34:26.951+02:00  INFO 3648 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.MedicalRecordControllerTest]: MedicalRecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T12:34:26.981+02:00  INFO 3648 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.MedicalRecordControllerTest
+2025-05-02T12:34:26.989+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-02T12:34:27.031+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Starting MedicalRecordControllerTest using Java 21.0.3 with PID 3648 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-02T12:34:27.031+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T12:34:27.312+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T12:34:27.313+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T12:34:27.313+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-05-02T12:34:27.320+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Started MedicalRecordControllerTest in 0.332 seconds (process running for 7.466)
+2025-05-02T12:34:27.330+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord/search?firstName=John&lastName=Boyd
+2025-05-02T12:34:27.361+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : POST /medicalRecord => adding record for John Boyd
+2025-05-02T12:34:27.374+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord => fetching all medical records
+2025-05-02T12:34:27.376+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : Found 2 medical records.
+2025-05-02T12:34:27.405+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : DELETE /medicalRecord?firstName=John&lastName=Boyd
+2025-05-02T12:34:27.417+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : PUT /medicalRecord => updating record for John Boyd
+2025-05-02T12:34:27.438+02:00  INFO 3648 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T12:34:27.464+02:00  INFO 3648 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.PersonControllerTest
+2025-05-02T12:34:27.469+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-02T12:34:27.500+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Starting PersonControllerTest using Java 21.0.3 with PID 3648 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-02T12:34:27.501+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T12:34:27.758+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T12:34:27.758+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T12:34:27.759+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-02T12:34:27.765+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Started PersonControllerTest in 0.296 seconds (process running for 7.911)
+2025-05-02T12:34:27.778+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : POST /person => creating person: John Boyd
+2025-05-02T12:34:27.790+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : DELETE /person?firstName=John&lastName=Boyd called
+2025-05-02T12:34:27.802+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person/search?firstName=John&lastName=Boyd called
+2025-05-02T12:34:27.818+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person called => fetching all persons
+2025-05-02T12:34:27.819+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : Found 2 persons.
+2025-05-02T12:34:27.838+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : PUT /person => updating person: John Boyd
+2025-05-02T12:34:27.851+02:00  INFO 3648 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.SafetyNetAlertsApplicationTests]: SafetyNetAlertsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T12:34:27.880+02:00  INFO 3648 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.SafetyNetAlertsApplicationTests
+2025-05-02T12:34:27.895+02:00  INFO 3648 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-02T12:34:27.936+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 3648 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-02T12:34:27.937+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T12:34:28.616+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 0.722 seconds (process running for 8.763)
+2025-05-02T12:34:28.844+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-05-02T12:34:28.848+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-05-02T12:34:28.855+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-05-02T12:34:28.860+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-05-02T12:34:28.864+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-05-02T12:34:28.869+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-05-02T12:34:28.878+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Deleted medical record for John Boyd
+2025-05-02T12:34:28.883+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=03/03/1993, medications=[ganja:420mg], allergies=[]
+2025-05-02T12:34:28.895+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : No medical record found for Bob Marley. No deletion performed.
+2025-05-02T12:34:28.901+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for John Boyd already exists. No creation performed.
+2025-05-02T12:34:28.913+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for Alice Wonder not found. Update not performed.
+2025-05-02T12:34:28.922+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Updating medical record for Jane Doe
+2025-05-02T12:34:28.932+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Added person: firstName=John, lastName=Doe, address=1 Main, city=City, zip=00000, phone=333, email=john@doe.com
+2025-05-02T12:34:28.937+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Updating person: Alice Cooper
+2025-05-02T12:34:28.942+02:00  INFO 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-05-02T12:34:28.943+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
+2025-05-02T12:34:28.960+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
+2025-05-02T12:34:28.979+02:00  WARN 3648 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.
