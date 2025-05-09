@@ -21,14 +21,14 @@ public class PersonService {
     }
 
     /**
-     * (Optionnel) Retourne la liste complète des personnes
+     * Retourne la liste complète des personnes
      */
     public List<Person> getAllPersons() {
         return dataRepository.getPersons();
     }
 
     /**
-     * (Optionnel) Retrouve une Person par son prénom et nom
+     * Retrouve une Person par son prénom et nom
      * Renvoie null si non trouvée
      */
     public Person getPersonByName(String firstName, String lastName) {

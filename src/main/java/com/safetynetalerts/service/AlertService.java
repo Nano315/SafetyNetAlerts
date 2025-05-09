@@ -29,7 +29,7 @@ public class AlertService {
 
     /**
      * GET /childAlert?address=<address>
-     * Retourne la liste des enfants vivant à l'adresse (≤ 18 ans) avec leur âge,
+     * Retourne la liste des enfants vivant à l'adresse (=< 18 ans) avec leur âge,
      * plus la liste des autres membres du foyer (prénom + nom).
      * S'il n'y a pas d'enfant => liste vide (ou chaîne vide).
      */

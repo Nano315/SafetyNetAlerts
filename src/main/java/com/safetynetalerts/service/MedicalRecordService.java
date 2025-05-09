@@ -20,14 +20,14 @@ public class MedicalRecordService {
     }
 
     /**
-     * (Optionnel) Retourne la liste complète des MedicalRecords
+     * Retourne la liste complète des MedicalRecords
      */
     public List<MedicalRecord> getAllMedicalRecords() {
         return dataRepository.getMedicalRecords();
     }
 
     /**
-     * (Optionnel) Retrouve un MedicalRecord par (firstName, lastName).
+     * Retrouve un MedicalRecord par (firstName, lastName).
      * Renvoie null si non trouvé.
      */
     public MedicalRecord getMedicalRecordByName(String firstName, String lastName) {
