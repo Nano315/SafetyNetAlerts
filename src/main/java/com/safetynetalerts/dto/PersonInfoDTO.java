@@ -1,23 +1,34 @@
 package com.safetynetalerts.dto;
 
+/**
+ * Version allégée d’une personne : utilisée dans la réponse
+ * /firestation?stationNumber=….
+ */
 public class PersonInfoDTO {
+
     private String firstName;
     private String lastName;
     private String address;
     private String phone;
 
+    /** Constructeur par défaut (Jackson). */
     public PersonInfoDTO() {
-        // Constructeur par défaut
     }
 
-    public PersonInfoDTO(String firstName, String lastName, String address, String phone) {
+    public PersonInfoDTO(String firstName,
+            String lastName,
+            String address,
+            String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.phone = phone;
     }
 
-    // --- Getters & Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getFirstName() {
         return firstName;
     }

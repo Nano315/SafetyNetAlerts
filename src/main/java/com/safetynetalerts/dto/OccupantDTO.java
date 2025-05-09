@@ -2,6 +2,10 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Informations détaillées d’un occupant (utilisé dans les réponses
+ * /fire et /flood/stations).
+ */
 public class OccupantDTO {
 
     private String firstName;
@@ -11,13 +15,16 @@ public class OccupantDTO {
     private List<String> medications;
     private List<String> allergies;
 
-    // Constructeur par défaut
+    /** Constructeur sans argument (Jackson). */
     public OccupantDTO() {
     }
 
-    // Constructeur paramétré
-    public OccupantDTO(String firstName, String lastName, int age, String phone,
-            List<String> medications, List<String> allergies) {
+    public OccupantDTO(String firstName,
+            String lastName,
+            int age,
+            String phone,
+            List<String> medications,
+            List<String> allergies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -26,7 +33,10 @@ public class OccupantDTO {
         this.allergies = allergies;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getFirstName() {
         return firstName;
     }
@@ -59,6 +69,7 @@ public class OccupantDTO {
         this.phone = phone;
     }
 
+    /** Liste de médicaments (« nom:posologie »). */
     public List<String> getMedications() {
         return medications;
     }

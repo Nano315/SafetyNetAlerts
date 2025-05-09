@@ -2,22 +2,29 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Représente un foyer (adresse + occupants) dans la réponse de
+ * /flood/stations.
+ */
 public class HouseholdDTO {
 
     private String address;
     private List<OccupantDTO> occupants;
 
-    // Constructeur par défaut
+    /** Constructeur par défaut requis par Jackson. */
     public HouseholdDTO() {
     }
 
-    // Constructeur paramétré
     public HouseholdDTO(String address, List<OccupantDTO> occupants) {
         this.address = address;
         this.occupants = occupants;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
+    /** Adresse du foyer. */
     public String getAddress() {
         return address;
     }
@@ -26,6 +33,7 @@ public class HouseholdDTO {
         this.address = address;
     }
 
+    /** Liste des occupants (détails). */
     public List<OccupantDTO> getOccupants() {
         return occupants;
     }

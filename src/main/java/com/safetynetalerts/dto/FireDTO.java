@@ -2,10 +2,16 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Réponse de l’endpoint /fire : numéro de caserne desservant
+ * l’adresse et liste détaillée des occupants.
+ */
 public class FireDTO {
+
     private String stationNumber;
     private List<FirePersonDTO> persons;
 
+    /** Constructeur par défaut (Jackson). */
     public FireDTO() {
     }
 
@@ -14,8 +20,11 @@ public class FireDTO {
         this.persons = persons;
     }
 
-    // Getters / Setters
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
 
+    /** Numéro de la caserne de pompiers. */
     public String getStationNumber() {
         return stationNumber;
     }
@@ -24,6 +33,7 @@ public class FireDTO {
         this.stationNumber = stationNumber;
     }
 
+    /** Liste des occupants (DTO détaillé). */
     public List<FirePersonDTO> getPersons() {
         return persons;
     }

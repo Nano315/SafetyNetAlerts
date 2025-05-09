@@ -2,7 +2,12 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Détail d’un occupant pour la réponse des endpoints /fire
+ * et /flood/stations.
+ */
 public class FirePersonDTO {
+
     private String firstName;
     private String lastName;
     private String phone;
@@ -10,11 +15,16 @@ public class FirePersonDTO {
     private List<String> medications;
     private List<String> allergies;
 
+    /** Constructeur par défaut (Jackson). */
     public FirePersonDTO() {
     }
 
-    public FirePersonDTO(String firstName, String lastName, String phone, int age,
-            List<String> medications, List<String> allergies) {
+    public FirePersonDTO(String firstName,
+            String lastName,
+            String phone,
+            int age,
+            List<String> medications,
+            List<String> allergies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -23,8 +33,11 @@ public class FirePersonDTO {
         this.allergies = allergies;
     }
 
-    // Getters / Setters
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
 
+    /** Prénom. */
     public String getFirstName() {
         return firstName;
     }
@@ -33,6 +46,7 @@ public class FirePersonDTO {
         this.firstName = firstName;
     }
 
+    /** Nom. */
     public String getLastName() {
         return lastName;
     }
@@ -41,6 +55,7 @@ public class FirePersonDTO {
         this.lastName = lastName;
     }
 
+    /** Numéro de téléphone. */
     public String getPhone() {
         return phone;
     }
@@ -49,6 +64,7 @@ public class FirePersonDTO {
         this.phone = phone;
     }
 
+    /** Âge de la personne. */
     public int getAge() {
         return age;
     }
@@ -57,6 +73,7 @@ public class FirePersonDTO {
         this.age = age;
     }
 
+    /** Liste des médicaments (format « nom:posologie »). */
     public List<String> getMedications() {
         return medications;
     }
@@ -65,6 +82,7 @@ public class FirePersonDTO {
         this.medications = medications;
     }
 
+    /** Liste des allergies connues. */
     public List<String> getAllergies() {
         return allergies;
     }

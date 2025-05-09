@@ -2,22 +2,38 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Réponse de l’endpoint /firestation?stationNumber=….
+ * Contient :
+ *
+ * la liste des habitants (info minimale),
+ * le nombre d’adultes,
+ * le nombre d’enfants.
+ *
+ */
 public class FirestationCoverageDTO {
+
     private List<PersonInfoDTO> persons;
     private int numberOfAdults;
     private int numberOfChildren;
 
+    /** Constructeur par défaut (Jackson). */
     public FirestationCoverageDTO() {
-        // Constructeur par défaut
     }
 
-    public FirestationCoverageDTO(List<PersonInfoDTO> persons, int numberOfAdults, int numberOfChildren) {
+    public FirestationCoverageDTO(List<PersonInfoDTO> persons,
+            int numberOfAdults,
+            int numberOfChildren) {
         this.persons = persons;
         this.numberOfAdults = numberOfAdults;
         this.numberOfChildren = numberOfChildren;
     }
 
-    // --- Getters & Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
+    /** Habitants couverts par la caserne. */
     public List<PersonInfoDTO> getPersons() {
         return persons;
     }
@@ -26,6 +42,7 @@ public class FirestationCoverageDTO {
         this.persons = persons;
     }
 
+    /** Nombre d’adultes (> 18 ans). */
     public int getNumberOfAdults() {
         return numberOfAdults;
     }
@@ -34,6 +51,7 @@ public class FirestationCoverageDTO {
         this.numberOfAdults = numberOfAdults;
     }
 
+    /** Nombre d’enfants (=< 18 ans). */
     public int getNumberOfChildren() {
         return numberOfChildren;
     }

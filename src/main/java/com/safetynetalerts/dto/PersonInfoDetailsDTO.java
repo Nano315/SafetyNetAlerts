@@ -2,6 +2,10 @@ package com.safetynetalerts.dto;
 
 import java.util.List;
 
+/**
+ * Informations complètes pour une personne, retournées par
+ * /personInfo.
+ */
 public class PersonInfoDetailsDTO {
 
     private String firstName;
@@ -12,14 +16,17 @@ public class PersonInfoDetailsDTO {
     private List<String> medications;
     private List<String> allergies;
 
-    // Constructeur par défaut (obligatoire pour la sérialisation/désérialisation
-    // JSON)
+    /** Constructeur par défaut (nécessaire pour Jackson). */
     public PersonInfoDetailsDTO() {
     }
 
-    // Constructeur paramétré
-    public PersonInfoDetailsDTO(String firstName, String lastName, String address, int age,
-            String email, List<String> medications, List<String> allergies) {
+    public PersonInfoDetailsDTO(String firstName,
+            String lastName,
+            String address,
+            int age,
+            String email,
+            List<String> medications,
+            List<String> allergies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -29,7 +36,10 @@ public class PersonInfoDetailsDTO {
         this.allergies = allergies;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getFirstName() {
         return firstName;
     }
