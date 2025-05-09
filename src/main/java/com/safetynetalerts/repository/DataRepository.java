@@ -6,66 +6,80 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.safetynetalerts.model.Firestation;
 import com.safetynetalerts.model.MedicalRecord;
 import com.safetynetalerts.model.Person;
+import jakarta.annotation.PostConstruct;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Repository;
 
-import jakarta.annotation.PostConstruct;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Repository en mémoire : lit le fichier JSON au démarrage et expose
+ * trois listes (persons, firestations, medicalRecords).
+ */
 @Repository
 public class DataRepository {
 
-    // Listes en mémoire (stockent toutes les données du JSON)
+    private static final Logger LOG = LoggerFactory.getLogger(DataRepository.class);
+
+    /* ------------------------------------------------------------------ */
+    /* Collections en mémoire */
+    /* ------------------------------------------------------------------ */
+
     private List<Person> persons = new ArrayList<>();
     private List<Firestation> firestations = new ArrayList<>();
     private List<MedicalRecord> medicalRecords = new ArrayList<>();
 
-    // Chemin vers le fichier JSON (défini dans application.properties)
-    // Exemple: data.json placé dans src/main/resources
-    // et application.properties contient "data.file=classpath:data.json"
+    /* ------------------------------------------------------------------ */
+    /* Chargement du fichier JSON */
+    /* ------------------------------------------------------------------ */
+
+    /** Chemin du fichier, configuré dans application.properties. */
     @Value("${data.file:classpath:data.json}")
     private Resource dataFile;
 
     /**
-     * Méthode appelée automatiquement au démarrage de l'application.
-     * Elle charge le fichier JSON en mémoire.
+     * Chargement automatique au démarrage.
+     * 
+     * Toute la logique de parsing JSON est centralisée ici afin de pouvoir
+     * manipuler les données intégralement en mémoire.
      */
     @PostConstruct
     private void loadData() {
-        ObjectMapper objectMapper = new ObjectMapper();
+        ObjectMapper mapper = new ObjectMapper();
         try (InputStream is = dataFile.getInputStream()) {
 
-            // 1) Lire tout le JSON
-            JsonNode root = objectMapper.readTree(is);
+            JsonNode root = mapper.readTree(is);
 
-            // 2) Extraire le tableau "persons"
-            JsonNode personsNode = root.get("persons");
-            persons = objectMapper.readValue(personsNode.traverse(), new TypeReference<>() {
-            });
+            persons = mapper.readValue(root.get("persons").traverse(),
+                    new TypeReference<>() {
+                    });
 
-            // 3) Extraire le tableau "firestations"
-            JsonNode firestationsNode = root.get("firestations");
-            firestations = objectMapper.readValue(firestationsNode.traverse(), new TypeReference<>() {
-            });
+            firestations = mapper.readValue(root.get("firestations").traverse(),
+                    new TypeReference<>() {
+                    });
 
-            // 4) Extraire le tableau "medicalrecords"
-            JsonNode medicalRecordsNode = root.get("medicalrecords");
-            medicalRecords = objectMapper.readValue(medicalRecordsNode.traverse(), new TypeReference<>() {
-            });
+            medicalRecords = mapper.readValue(root.get("medicalrecords").traverse(),
+                    new TypeReference<>() {
+                    });
 
-            System.out.println("Data loaded successfully from JSON file.");
+            LOG.info("JSON chargé : {} persons, {} firestations, {} medicalRecords",
+                    persons.size(), firestations.size(), medicalRecords.size());
 
         } catch (IOException e) {
-            e.printStackTrace();
-            System.err.println("Error loading JSON file: " + e.getMessage());
+            LOG.error("Erreur lors du chargement des données JSON", e);
         }
     }
 
-    // --- Getters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs (lecture seule) */
+    /* ------------------------------------------------------------------ */
+
     public List<Person> getPersons() {
         return persons;
     }
@@ -77,8 +91,4 @@ public class DataRepository {
     public List<MedicalRecord> getMedicalRecords() {
         return medicalRecords;
     }
-
-    // --- Setters (optionnels) ---
-    // Vous pouvez ajouter des setters si vous prévoyez de mettre à jour les données
-    // en mémoire.
 }

@@ -784,3 +784,355 @@
 2025-05-09T11:54:59.231+02:00  WARN 21168 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
 2025-05-09T11:54:59.241+02:00  WARN 21168 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
 2025-05-09T11:54:59.252+02:00  WARN 21168 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.
+2025-05-09T12:00:38.374+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Starting AlertControllerTest using Java 21.0.3 with PID 23224 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:38.380+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:41.644+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:00:41.644+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:00:41.646+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-05-09T12:00:41.699+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Started AlertControllerTest in 4.172 seconds (process running for 7.369)
+2025-05-09T12:00:41.990+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /flood/stations?stations=[1]
+2025-05-09T12:00:42.001+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 foyer(s)
+2025-05-09T12:00:42.332+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /communityEmail?city=Culver
+2025-05-09T12:00:42.333+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 2 e‑mail(s)
+2025-05-09T12:00:42.345+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /personInfo?lastName=Boyd
+2025-05-09T12:00:42.347+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 personne(s)
+2025-05-09T12:00:42.378+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /phoneAlert?firestation=1
+2025-05-09T12:00:42.381+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 2 numéro(s)
+2025-05-09T12:00:42.410+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /fire?address=1509 Culver St
+2025-05-09T12:00:42.411+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Station 1 – 1 occupant(s)
+2025-05-09T12:00:42.446+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /childAlert?address=1509 Culver St
+2025-05-09T12:00:42.447+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 enfant(s)
+2025-05-09T12:00:42.495+02:00  INFO 23224 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:00:42.550+02:00  INFO 23224 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.FirestationControllerTest
+2025-05-09T12:00:42.561+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:00:42.651+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Starting FirestationControllerTest using Java 21.0.3 with PID 23224 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:42.652+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:43.027+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:00:43.028+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:00:43.029+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-05-09T12:00:43.040+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Started FirestationControllerTest in 0.48 seconds (process running for 8.711)
+2025-05-09T12:00:43.163+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : PUT /firestation – address=1509 Culver St, newStation=5
+2025-05-09T12:00:43.177+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : POST /firestation – address=1509 Culver St, station=1
+2025-05-09T12:00:43.193+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : DELETE /firestation?address=1509 Culver St
+2025-05-09T12:00:43.208+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : GET /firestation?stationNumber=1
+2025-05-09T12:00:43.209+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : Réponse : 2 pers. (1 adultes / 1 enfants)
+2025-05-09T12:00:43.245+02:00  INFO 23224 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.MedicalRecordControllerTest]: MedicalRecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:00:43.295+02:00  INFO 23224 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.MedicalRecordControllerTest
+2025-05-09T12:00:43.315+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:00:43.356+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Starting MedicalRecordControllerTest using Java 21.0.3 with PID 23224 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:43.356+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:43.715+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:00:43.715+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:00:43.717+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-09T12:00:43.727+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Started MedicalRecordControllerTest in 0.413 seconds (process running for 9.397)
+2025-05-09T12:00:43.740+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord/search – John Boyd
+2025-05-09T12:00:43.778+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : POST /medicalRecord – création dossier pour John Boyd
+2025-05-09T12:00:43.805+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord – récupération de tous les dossiers
+2025-05-09T12:00:43.807+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : 2 dossier(s) médical(aux) trouvé(s)
+2025-05-09T12:00:43.837+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : DELETE /medicalRecord – John Boyd
+2025-05-09T12:00:43.859+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : PUT /medicalRecord – mise à jour dossier pour John Boyd
+2025-05-09T12:00:43.892+02:00  INFO 23224 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:00:43.916+02:00  INFO 23224 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.PersonControllerTest
+2025-05-09T12:00:43.924+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:00:43.986+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Starting PersonControllerTest using Java 21.0.3 with PID 23224 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:43.986+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:44.368+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:00:44.369+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:00:44.371+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-05-09T12:00:44.382+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Started PersonControllerTest in 0.458 seconds (process running for 10.052)
+2025-05-09T12:00:44.403+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : POST /person – création John
+2025-05-09T12:00:44.419+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : DELETE /person – John Boyd
+2025-05-09T12:00:44.433+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person/search – John Boyd
+2025-05-09T12:00:44.448+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person – liste complète
+2025-05-09T12:00:44.449+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : 2 personne(s) trouvée(s)
+2025-05-09T12:00:44.469+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : PUT /person – mise à jour John
+2025-05-09T12:00:44.489+02:00  INFO 23224 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.SafetyNetAlertsApplicationTests]: SafetyNetAlertsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:00:44.510+02:00  INFO 23224 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.SafetyNetAlertsApplicationTests
+2025-05-09T12:00:44.524+02:00  INFO 23224 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:00:44.559+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 23224 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:44.560+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:45.239+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 0.716 seconds (process running for 10.908)
+2025-05-09T12:00:45.494+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-05-09T12:00:45.498+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-05-09T12:00:45.507+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-05-09T12:00:45.514+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-05-09T12:00:45.522+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-05-09T12:00:45.527+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-05-09T12:00:45.539+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Deleted medical record for John Boyd
+2025-05-09T12:00:45.544+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=03/03/1993, medications=[ganja:420mg], allergies=[]
+2025-05-09T12:00:45.554+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : No medical record found for Bob Marley. No deletion performed.
+2025-05-09T12:00:45.558+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for John Boyd already exists. No creation performed.
+2025-05-09T12:00:45.569+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for Alice Wonder not found. Update not performed.
+2025-05-09T12:00:45.579+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Updating medical record for Jane Doe
+2025-05-09T12:00:45.589+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Added person: firstName=John, lastName=Doe, address=1 Main, city=City, zip=00000, phone=333, email=john@doe.com
+2025-05-09T12:00:45.593+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Updating person: Alice Cooper
+2025-05-09T12:00:45.600+02:00  INFO 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-05-09T12:00:45.601+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
+2025-05-09T12:00:45.613+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
+2025-05-09T12:00:45.624+02:00  WARN 23224 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.
+2025-05-09T12:00:51.498+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:00:51.501+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:00:51.576+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-09T12:00:51.576+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-09T12:00:53.010+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:00:53.031+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:00:53.032+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:00:53.081+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:00:53.082+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1504 ms
+2025-05-09T12:00:53.631+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:00:53.701+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:00:53.715+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 2.82 seconds (process running for 3.505)
+2025-05-09T12:00:56.035+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-09T12:00:56.036+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-09T12:00:56.038+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-09T12:00:56.132+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.controller.FirestationController     : GET /firestation?stationNumber=1
+2025-05-09T12:00:56.155+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.controller.FirestationController     : Réponse : 6 pers. (5 adultes / 1 enfants)
+2025-05-09T12:00:56.321+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.controller.FirestationController     : POST /firestation – address=123 New St, station=5
+2025-05-09T12:00:56.324+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.service.FirestationService           : Added new firestation mapping: address=123 New St, station=5
+2025-05-09T12:00:56.385+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.FirestationController     : PUT /firestation – address=1509 Culver St, newStation=1
+2025-05-09T12:00:56.386+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=3 to station=1
+2025-05-09T12:00:56.444+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.FirestationController     : DELETE /firestation?address=123 New St
+2025-05-09T12:00:56.446+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.service.FirestationService           : Deleted firestation mapping for address=123 New St
+2025-05-09T12:00:56.493+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.PersonController          : GET /person – liste complète
+2025-05-09T12:00:56.495+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.PersonController          : 23 personne(s) trouvée(s)
+2025-05-09T12:00:56.588+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.PersonController          : POST /person – création Bob
+2025-05-09T12:00:56.591+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.safetynetalerts.service.PersonService  : Added person: firstName=Bob, lastName=Marley, address=12 Jamaican St, city=Kingston, zip=12345, phone=555-777-8888, email=bob@marley.com
+2025-05-09T12:00:56.675+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.s.controller.PersonController          : PUT /person – mise à jour Bob
+2025-05-09T12:00:56.676+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.safetynetalerts.service.PersonService  : Updating person: Bob Marley
+2025-05-09T12:00:56.759+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.PersonController          : DELETE /person – Bob Marley
+2025-05-09T12:00:56.763+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-05-09T12:00:56.794+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.s.controller.MedicalRecordController   : GET /medicalRecord – récupération de tous les dossiers
+2025-05-09T12:00:56.796+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.s.controller.MedicalRecordController   : 23 dossier(s) médical(aux) trouvé(s)
+2025-05-09T12:00:56.848+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.controller.MedicalRecordController   : POST /medicalRecord – création dossier pour Bob Marley
+2025-05-09T12:00:56.849+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=02/05/1990, medications=[doli:1000mg], allergies=[cigaretteSmoke]
+2025-05-09T12:00:56.938+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.controller.MedicalRecordController   : PUT /medicalRecord – mise à jour dossier pour Bob Marley
+2025-05-09T12:00:56.939+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.service.MedicalRecordService         : Updating medical record for Bob Marley
+2025-05-09T12:00:56.990+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.controller.MedicalRecordController   : DELETE /medicalRecord – Bob Marley
+2025-05-09T12:00:56.991+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.service.MedicalRecordService         : Deleted medical record for Bob Marley
+2025-05-09T12:00:57.049+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.AlertController           : GET /childAlert?address=1509 Culver St
+2025-05-09T12:00:57.056+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.AlertController           : Réponse : 2 enfant(s)
+2025-05-09T12:00:57.111+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.AlertController           : GET /phoneAlert?firestation=3
+2025-05-09T12:00:57.113+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.AlertController           : Réponse : 6 numéro(s)
+2025-05-09T12:00:57.173+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.AlertController           : GET /fire?address=834 Binoc Ave
+2025-05-09T12:00:57.176+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.AlertController           : Station 3 – 1 occupant(s)
+2025-05-09T12:00:57.269+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.AlertController           : GET /flood/stations?stations=[1, 2, 3]
+2025-05-09T12:00:57.275+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.AlertController           : Réponse : 10 foyer(s)
+2025-05-09T12:00:57.333+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.s.controller.AlertController           : GET /personInfo?lastName=Boyd
+2025-05-09T12:00:57.336+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.s.controller.AlertController           : Réponse : 6 personne(s)
+2025-05-09T12:00:57.394+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.AlertController           : GET /communityEmail?city=Culver
+2025-05-09T12:00:57.395+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.AlertController           : Réponse : 15 e‑mail(s)
+2025-05-09T12:02:50.090+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-09T12:02:50.101+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:02:50.133+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:02:50.243+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:02:50.244+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:02:50.567+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:02:50.569+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:02:50.569+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:02:50.589+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:02:50.590+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 342 ms
+2025-05-09T12:02:50.728+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:02:50.740+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:02:50.745+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.543 seconds (process running for 120.535)
+2025-05-09T12:02:50.751+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:03:25.981+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-09T12:03:25.985+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:03:26.023+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:03:26.128+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:03:26.129+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:03:26.358+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:03:26.359+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:03:26.359+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:03:26.381+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:03:26.381+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 249 ms
+2025-05-09T12:03:26.530+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:03:26.542+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:03:26.546+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.449 seconds (process running for 156.336)
+2025-05-09T12:03:26.548+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:03:35.149+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-05-09T12:03:35.151+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:03:35.174+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:03:35.244+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:03:35.244+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:03:35.433+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:03:35.435+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:03:35.435+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:03:35.450+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:03:35.451+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2025-05-09T12:03:35.561+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:03:35.573+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:03:35.576+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.356 seconds (process running for 165.366)
+2025-05-09T12:03:35.579+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:04:05.179+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2025-05-09T12:04:05.184+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:04:05.197+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:04:05.283+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:04:05.284+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:04:05.714+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:04:05.715+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:04:05.716+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:04:05.734+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:04:05.735+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 448 ms
+2025-05-09T12:04:05.762+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.repository.DataRepository            : JSON chargé : 23 persons, 13 firestations, 23 medicalRecords
+2025-05-09T12:04:05.849+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:04:05.856+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:04:05.859+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.6 seconds (process running for 195.65)
+2025-05-09T12:04:05.863+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:04:22.656+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-05-09T12:04:22.658+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:04:22.668+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:04:22.739+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:04:22.740+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:04:22.966+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:04:22.968+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:04:22.969+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:04:22.989+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:04:22.990+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 248 ms
+2025-05-09T12:04:23.013+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.repository.DataRepository            : JSON chargé : 23 persons, 13 firestations, 23 medicalRecords
+2025-05-09T12:04:23.102+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:04:23.118+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:04:23.121+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.405 seconds (process running for 212.911)
+2025-05-09T12:04:23.126+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:04:55.331+02:00  INFO 17208 --- [SafetyNetAlerts] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-05-09T12:04:55.333+02:00  INFO 17208 --- [SafetyNetAlerts] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:04:55.344+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:04:55.441+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Starting SafetyNetAlertsApplication using Java 21.0.3 with PID 17208 (C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts\target\classes started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:04:55.443+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:04:55.699+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-09T12:04:55.700+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-09T12:04:55.701+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09T12:04:55.717+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-09T12:04:55.719+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 271 ms
+2025-05-09T12:04:55.744+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.repository.DataRepository            : JSON chargé : 23 persons, 13 firestations, 23 medicalRecords
+2025-05-09T12:04:55.838+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-09T12:04:55.846+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-09T12:04:55.850+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] c.s.SafetyNetAlertsApplication           : Started SafetyNetAlertsApplication in 0.448 seconds (process running for 245.64)
+2025-05-09T12:04:55.852+02:00  INFO 17208 --- [SafetyNetAlerts] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-09T12:05:01.412+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-09T12:05:01.413+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-09T12:05:01.416+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-09T12:05:01.426+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.controller.FirestationController     : GET /firestation?stationNumber=1
+2025-05-09T12:05:01.445+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.controller.FirestationController     : Réponse : 6 pers. (5 adultes / 1 enfants)
+2025-05-09T12:05:01.554+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.controller.FirestationController     : POST /firestation – address=123 New St, station=5
+2025-05-09T12:05:01.555+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.service.FirestationService           : Added new firestation mapping: address=123 New St, station=5
+2025-05-09T12:05:01.644+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.FirestationController     : PUT /firestation – address=1509 Culver St, newStation=1
+2025-05-09T12:05:01.644+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=3 to station=1
+2025-05-09T12:05:01.708+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.FirestationController     : DELETE /firestation?address=123 New St
+2025-05-09T12:05:01.709+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.service.FirestationService           : Deleted firestation mapping for address=123 New St
+2025-05-09T12:05:01.756+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.PersonController          : GET /person – liste complète
+2025-05-09T12:05:01.761+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.PersonController          : 23 personne(s) trouvée(s)
+2025-05-09T12:05:01.848+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.PersonController          : POST /person – création Bob
+2025-05-09T12:05:01.849+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.safetynetalerts.service.PersonService  : Added person: firstName=Bob, lastName=Marley, address=12 Jamaican St, city=Kingston, zip=12345, phone=555-777-8888, email=bob@marley.com
+2025-05-09T12:05:01.895+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.s.controller.PersonController          : PUT /person – mise à jour Bob
+2025-05-09T12:05:01.896+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.safetynetalerts.service.PersonService  : Updating person: Bob Marley
+2025-05-09T12:05:01.956+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.PersonController          : DELETE /person – Bob Marley
+2025-05-09T12:05:01.956+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-05-09T12:05:02.049+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.s.controller.MedicalRecordController   : GET /medicalRecord – récupération de tous les dossiers
+2025-05-09T12:05:02.049+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-8] c.s.controller.MedicalRecordController   : 23 dossier(s) médical(aux) trouvé(s)
+2025-05-09T12:05:02.113+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.controller.MedicalRecordController   : POST /medicalRecord – création dossier pour Bob Marley
+2025-05-09T12:05:02.114+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-1] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=02/05/1990, medications=[doli:1000mg], allergies=[cigaretteSmoke]
+2025-05-09T12:05:02.189+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.controller.MedicalRecordController   : PUT /medicalRecord – mise à jour dossier pour Bob Marley
+2025-05-09T12:05:02.190+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-2] c.s.service.MedicalRecordService         : Updating medical record for Bob Marley
+2025-05-09T12:05:02.269+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.controller.MedicalRecordController   : DELETE /medicalRecord – Bob Marley
+2025-05-09T12:05:02.270+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-3] c.s.service.MedicalRecordService         : Deleted medical record for Bob Marley
+2025-05-09T12:05:02.314+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.AlertController           : GET /childAlert?address=1509 Culver St
+2025-05-09T12:05:02.317+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-4] c.s.controller.AlertController           : Réponse : 2 enfant(s)
+2025-05-09T12:05:02.376+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.AlertController           : GET /phoneAlert?firestation=3
+2025-05-09T12:05:02.378+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-5] c.s.controller.AlertController           : Réponse : 6 numéro(s)
+2025-05-09T12:05:02.425+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.AlertController           : GET /fire?address=834 Binoc Ave
+2025-05-09T12:05:02.427+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-6] c.s.controller.AlertController           : Station 3 – 1 occupant(s)
+2025-05-09T12:05:02.486+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.AlertController           : GET /flood/stations?stations=[1, 2, 3]
+2025-05-09T12:05:02.490+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-9] c.s.controller.AlertController           : Réponse : 10 foyer(s)
+2025-05-09T12:05:02.550+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.s.controller.AlertController           : GET /personInfo?lastName=Boyd
+2025-05-09T12:05:02.552+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-10] c.s.controller.AlertController           : Réponse : 6 personne(s)
+2025-05-09T12:05:02.622+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.AlertController           : GET /communityEmail?city=Culver
+2025-05-09T12:05:02.623+02:00  INFO 17208 --- [SafetyNetAlerts] [http-nio-8080-exec-7] c.s.controller.AlertController           : Réponse : 15 e‑mail(s)
+2025-05-09T12:05:07.511+02:00  INFO 17208 --- [SafetyNetAlerts] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-09T12:05:07.520+02:00  INFO 17208 --- [SafetyNetAlerts] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-09T12:05:19.118+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Starting AlertControllerTest using Java 21.0.3 with PID 14596 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:05:19.123+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:05:22.028+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:05:22.028+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:05:22.031+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-05-09T12:05:22.101+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertControllerTest       : Started AlertControllerTest in 3.726 seconds (process running for 5.996)
+2025-05-09T12:05:22.333+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /flood/stations?stations=[1]
+2025-05-09T12:05:22.344+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 foyer(s)
+2025-05-09T12:05:22.628+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /communityEmail?city=Culver
+2025-05-09T12:05:22.629+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 2 e‑mail(s)
+2025-05-09T12:05:22.644+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /personInfo?lastName=Boyd
+2025-05-09T12:05:22.644+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 personne(s)
+2025-05-09T12:05:22.664+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /phoneAlert?firestation=1
+2025-05-09T12:05:22.666+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 2 numéro(s)
+2025-05-09T12:05:22.684+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /fire?address=1509 Culver St
+2025-05-09T12:05:22.685+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Station 1 – 1 occupant(s)
+2025-05-09T12:05:22.717+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : GET /childAlert?address=1509 Culver St
+2025-05-09T12:05:22.718+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.AlertController           : Réponse : 1 enfant(s)
+2025-05-09T12:05:22.753+02:00  INFO 14596 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.FirestationControllerTest]: FirestationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:05:22.845+02:00  INFO 14596 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.FirestationControllerTest
+2025-05-09T12:05:22.857+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:05:22.912+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Starting FirestationControllerTest using Java 21.0.3 with PID 14596 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:05:22.913+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:05:23.272+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:05:23.272+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:05:23.273+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-09T12:05:23.283+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.FirestationControllerTest          : Started FirestationControllerTest in 0.428 seconds (process running for 7.178)
+2025-05-09T12:05:23.391+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : PUT /firestation – address=1509 Culver St, newStation=5
+2025-05-09T12:05:23.410+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : POST /firestation – address=1509 Culver St, station=1
+2025-05-09T12:05:23.424+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : DELETE /firestation?address=1509 Culver St
+2025-05-09T12:05:23.438+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : GET /firestation?stationNumber=1
+2025-05-09T12:05:23.439+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.FirestationController     : Réponse : 2 pers. (1 adultes / 1 enfants)
+2025-05-09T12:05:23.476+02:00  INFO 14596 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.MedicalRecordControllerTest]: MedicalRecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:05:23.505+02:00  INFO 14596 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.MedicalRecordControllerTest
+2025-05-09T12:05:23.515+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:05:23.555+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Starting MedicalRecordControllerTest using Java 21.0.3 with PID 14596 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:05:23.556+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:05:23.834+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:05:23.835+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:05:23.836+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-09T12:05:23.844+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.c.MedicalRecordControllerTest        : Started MedicalRecordControllerTest in 0.329 seconds (process running for 7.739)
+2025-05-09T12:05:23.855+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord/search – John Boyd
+2025-05-09T12:05:23.883+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : POST /medicalRecord – création dossier pour John Boyd
+2025-05-09T12:05:23.899+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : GET /medicalRecord – récupération de tous les dossiers
+2025-05-09T12:05:23.901+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : 2 dossier(s) médical(aux) trouvé(s)
+2025-05-09T12:05:23.929+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : DELETE /medicalRecord – John Boyd
+2025-05-09T12:05:23.941+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.MedicalRecordController   : PUT /medicalRecord – mise à jour dossier pour John Boyd
+2025-05-09T12:05:23.971+02:00  INFO 14596 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.controller.PersonControllerTest]: PersonControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:05:23.988+02:00  INFO 14596 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.controller.PersonControllerTest
+2025-05-09T12:05:23.994+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:05:24.027+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Starting PersonControllerTest using Java 21.0.3 with PID 14596 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:05:24.028+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:05:24.327+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T12:05:24.328+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T12:05:24.328+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-05-09T12:05:24.339+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonControllerTest      : Started PersonControllerTest in 0.345 seconds (process running for 8.234)
+2025-05-09T12:05:24.360+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : POST /person – création John
+2025-05-09T12:05:24.383+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : DELETE /person – John Boyd
+2025-05-09T12:05:24.402+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person/search – John Boyd
+2025-05-09T12:05:24.421+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : GET /person – liste complète
+2025-05-09T12:05:24.422+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : 2 personne(s) trouvée(s)
+2025-05-09T12:05:24.449+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.controller.PersonController          : PUT /person – mise à jour John
+2025-05-09T12:05:24.470+02:00  INFO 14596 --- [SafetyNetAlerts] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.safetynetalerts.SafetyNetAlertsApplicationTests]: SafetyNetAlertsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-09T12:05:24.496+02:00  INFO 14596 --- [SafetyNetAlerts] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.safetynetalerts.SafetyNetAlertsApplication for test class com.safetynetalerts.SafetyNetAlertsApplicationTests
+2025-05-09T12:05:24.511+02:00  INFO 14596 --- [SafetyNetAlerts] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-05-09T12:05:24.559+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Starting SafetyNetAlertsApplicationTests using Java 21.0.3 with PID 14596 (started by Dev in C:\Users\Dev\Documents\OpenClassRooms\Formation_DevJava\P5\SafetyNetAlerts)
+2025-05-09T12:05:24.560+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T12:05:24.934+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.repository.DataRepository            : JSON chargé : 23 persons, 13 firestations, 23 medicalRecords
+2025-05-09T12:05:25.171+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.SafetyNetAlertsApplicationTests      : Started SafetyNetAlertsApplicationTests in 0.661 seconds (process running for 9.065)
+2025-05-09T12:05:25.399+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : No firestation mapping found for address=No street
+2025-05-09T12:05:25.403+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Deleted firestation mapping for address=29 15th St
+2025-05-09T12:05:25.409+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Added new firestation mapping: address=487 New St, station=3
+2025-05-09T12:05:25.415+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address 1509 Culver St already mapped to a station. No creation done.
+2025-05-09T12:05:25.420+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Updating firestation for address=1509 Culver St from station=1 to station=5
+2025-05-09T12:05:25.424+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.FirestationService           : Address Unknown not found, update not performed.
+2025-05-09T12:05:25.433+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Deleted medical record for John Boyd
+2025-05-09T12:05:25.440+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Added new medical record for Bob Marley. Birthdate=03/03/1993, medications=[ganja:420mg], allergies=[]
+2025-05-09T12:05:25.446+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : No medical record found for Bob Marley. No deletion performed.
+2025-05-09T12:05:25.453+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for John Boyd already exists. No creation performed.
+2025-05-09T12:05:25.459+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : MedicalRecord for Alice Wonder not found. Update not performed.
+2025-05-09T12:05:25.467+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.s.service.MedicalRecordService         : Updating medical record for Jane Doe
+2025-05-09T12:05:25.480+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Added person: firstName=John, lastName=Doe, address=1 Main, city=City, zip=00000, phone=333, email=john@doe.com
+2025-05-09T12:05:25.483+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Updating person: Alice Cooper
+2025-05-09T12:05:25.488+02:00  INFO 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Deleted person: firstName=Bob, lastName=Marley
+2025-05-09T12:05:25.489+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley not found. No deletion performed.
+2025-05-09T12:05:25.495+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Ghost User not found. Update not performed.
+2025-05-09T12:05:25.508+02:00  WARN 14596 --- [SafetyNetAlerts] [main] c.safetynetalerts.service.PersonService  : Person Bob Marley already exists. No creation performed.

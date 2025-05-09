@@ -1,6 +1,10 @@
 package com.safetynetalerts.model;
 
+/**
+ * Entité « personne » telle que décrite dans le fichier JSON d’entrée.
+ */
 public class Person {
+
     private String firstName;
     private String lastName;
     private String address;
@@ -9,12 +13,17 @@ public class Person {
     private String phone;
     private String email;
 
+    /** Constructeur par défaut (Jackson). */
     public Person() {
-        // Constructeur par défaut requis pour la sérialisation/désérialisation JSON
     }
 
-    public Person(String firstName, String lastName, String address, String city,
-            String zip, String phone, String email) {
+    public Person(String firstName,
+            String lastName,
+            String address,
+            String city,
+            String zip,
+            String phone,
+            String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -24,7 +33,10 @@ public class Person {
         this.email = email;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getFirstName() {
         return firstName;
     }

@@ -2,19 +2,26 @@ package com.safetynetalerts.model;
 
 import java.util.List;
 
+/**
+ * Représente un dossier médical de la base JSON.
+ */
 public class MedicalRecord {
+
     private String firstName;
     private String lastName;
-    private String birthdate;
-    private List<String> medications;
+    private String birthdate; // format MM/dd/yyyy
+    private List<String> medications; // « nom:posologie »
     private List<String> allergies;
 
+    /** Constructeur par défaut (Jackson). */
     public MedicalRecord() {
-        // Constructeur par défaut requis pour la sérialisation/désérialisation JSON
     }
 
-    public MedicalRecord(String firstName, String lastName, String birthdate,
-            List<String> medications, List<String> allergies) {
+    public MedicalRecord(String firstName,
+            String lastName,
+            String birthdate,
+            List<String> medications,
+            List<String> allergies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthdate = birthdate;
@@ -22,7 +29,10 @@ public class MedicalRecord {
         this.allergies = allergies;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getFirstName() {
         return firstName;
     }

@@ -1,11 +1,21 @@
 package com.safetynetalerts.model;
 
+/**
+ * Mapping « adresse <-> numéro de caserne » utilisé par l’application.
+ * 
+ * La classe contient uniquement les champs utiles au JSON fourni ;
+ * aucune logique n’y est embarquée.
+ */
 public class Firestation {
+
+    /** Adresse desservie. */
     private String address;
+
+    /** Numéro de la caserne de pompiers. */
     private String station;
 
+    /** Constructeur par défaut (Jackson). */
     public Firestation() {
-        // Constructeur par défaut requis pour la sérialisation/désérialisation JSON
     }
 
     public Firestation(String address, String station) {
@@ -13,7 +23,10 @@ public class Firestation {
         this.station = station;
     }
 
-    // --- Getters and Setters ---
+    /* ------------------------------------------------------------------ */
+    /* Accesseurs / Mutateurs */
+    /* ------------------------------------------------------------------ */
+
     public String getAddress() {
         return address;
     }
