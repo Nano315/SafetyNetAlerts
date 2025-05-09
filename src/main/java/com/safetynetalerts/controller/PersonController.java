@@ -8,11 +8,16 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Contrôleur exposant les opérations CRUD sur les personnes
+ * ainsi que deux endpoints de consultation (liste complète / recherche).
+ */
 @RestController
 @RequestMapping("/person")
 public class PersonController {
 
-    private static final Logger logger = LoggerFactory.getLogger(PersonController.class);
+    /** Journalisation applicative. */
+    private static final Logger LOG = LoggerFactory.getLogger(PersonController.class);
 
     private final PersonService personService;
 
@@ -21,64 +26,72 @@ public class PersonController {
     }
 
     /**
-     * (Optionnel) GET /person
-     * Récupère la liste complète des personnes (utile pour tester)
+     * GET /person : liste toutes les personnes.
      */
     @GetMapping
     public List<Person> getAllPersons() {
-        logger.info("GET /person called => fetching all persons");
+        LOG.info("GET /person – liste complète");
         List<Person> persons = personService.getAllPersons();
-        logger.info("Found {} persons.", persons.size());
+        LOG.info("{} personne(s) trouvée(s)", persons.size());
         return persons;
     }
 
     /**
-     * (Optionnel) GET /person/search?firstName=x&lastName=y
-     * Récupère une personne par son prénom et nom
+     * GET /person/search : cherche une personne
+     * par prénom + nom.
+     *
+     * @param firstName prénom
+     * @param lastName  nom
      */
     @GetMapping("/search")
-    public Person getPersonByName(@RequestParam String firstName, @RequestParam String lastName) {
-        logger.info("GET /person/search?firstName={}&lastName={} called", firstName, lastName);
-        Person p = personService.getPersonByName(firstName, lastName);
-        if (p == null) {
-            logger.warn("Person not found: {} {}", firstName, lastName);
+    public Person getPersonByName(@RequestParam String firstName,
+            @RequestParam String lastName) {
+        LOG.info("GET /person/search – {} {}", firstName, lastName);
+        Person person = personService.getPersonByName(firstName, lastName);
+        if (person == null) {
+            LOG.warn("Aucune personne {} {}", firstName, lastName);
         }
-        return p;
+        return person;
     }
 
     /**
-     * POST /person
-     * Ajoute une nouvelle personne
+     * POST /person : ajoute une nouvelle personne.
+     *
+     * @param newPerson personne à créer
+     * @return personne créée ou {@code null} en cas de doublon
      */
     @PostMapping
     public Person addPerson(@RequestBody Person newPerson) {
-        logger.info("POST /person => creating person: {} {}", newPerson.getFirstName(), newPerson.getLastName());
-        Person created = personService.addPerson(newPerson);
-        return created; // Null si la personne existe déjà
+        LOG.info("POST /person – création {}", newPerson.getFirstName());
+        return personService.addPerson(newPerson);
     }
 
     /**
-     * PUT /person
-     * Met à jour une personne existante
-     * On recherche par (firstName, lastName) dans le corps.
+     * PUT /person : met à jour une personne existante.
+     * L’identification se fait par couple <code>firstName/lastName</code>.
+     *
+     * @param updatedPerson nouvelle version de la personne
+     * @return personne mise à jour ou {@code null} si introuvable
      */
     @PutMapping
     public Person updatePerson(@RequestBody Person updatedPerson) {
-        logger.info("PUT /person => updating person: {} {}", updatedPerson.getFirstName(), updatedPerson.getLastName());
-        Person updated = personService.updatePerson(updatedPerson);
-        return updated; // Null si la personne n'a pas été trouvée
+        LOG.info("PUT /person – mise à jour {}", updatedPerson.getFirstName());
+        return personService.updatePerson(updatedPerson);
     }
 
     /**
-     * DELETE /person?firstName=x&lastName=y
-     * Supprime la personne correspondant au couple (firstName, lastName)
+     * DELETE /person : supprime une personne.
+     *
+     * @param firstName prénom
+     * @param lastName  nom
      */
     @DeleteMapping
-    public void deletePerson(@RequestParam String firstName, @RequestParam String lastName) {
-        logger.info("DELETE /person?firstName={}&lastName={} called", firstName, lastName);
+    public void deletePerson(@RequestParam String firstName,
+            @RequestParam String lastName) {
+        LOG.info("DELETE /person – {} {}", firstName, lastName);
         boolean removed = personService.deletePerson(firstName, lastName);
         if (!removed) {
-            logger.warn("No person found for firstName={}, lastName={}", firstName, lastName);
+            LOG.warn("Suppression impossible : {} {} introuvable", firstName, lastName);
         }
     }
 }

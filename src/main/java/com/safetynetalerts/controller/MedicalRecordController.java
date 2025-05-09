@@ -8,11 +8,17 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Contrôleur gérant les opérations CRUD sur les dossiers médicaux
+ * ainsi que deux endpoints « optionnels » pratiques pour le
+ * débogage / l’administration.
+ */
 @RestController
 @RequestMapping("/medicalRecord")
 public class MedicalRecordController {
 
-    private static final Logger logger = LoggerFactory.getLogger(MedicalRecordController.class);
+    /** Journalisation applicative. */
+    private static final Logger LOG = LoggerFactory.getLogger(MedicalRecordController.class);
 
     private final MedicalRecordService medicalRecordService;
 
@@ -21,65 +27,74 @@ public class MedicalRecordController {
     }
 
     /**
-     * (Optionnel) GET /medicalRecord
-     * Liste tous les dossiers médicaux
+     * GET /medicalRecord : retourne la totalité
+     * des dossiers médicaux chargés en mémoire.
      */
     @GetMapping
     public List<MedicalRecord> getAllMedicalRecords() {
-        logger.info("GET /medicalRecord => fetching all medical records");
-        List<MedicalRecord> allRecords = medicalRecordService.getAllMedicalRecords();
-        logger.info("Found {} medical records.", allRecords.size());
-        return allRecords;
+        LOG.info("GET /medicalRecord – récupération de tous les dossiers");
+        List<MedicalRecord> records = medicalRecordService.getAllMedicalRecords();
+        LOG.info("{} dossier(s) médical(aux) trouvé(s)", records.size());
+        return records;
     }
 
     /**
-     * (Optionnel) GET /medicalRecord/search?firstName=x&lastName=y
-     * Récupère un dossier médical précis
+     * GET /medicalRecord/search : récupère un
+     * dossier précis à partir du couple <code>firstName/lastName</code>.
+     *
+     * @param firstName prénom
+     * @param lastName  nom
      */
     @GetMapping("/search")
-    public MedicalRecord getMedicalRecordByName(@RequestParam String firstName, @RequestParam String lastName) {
-        logger.info("GET /medicalRecord/search?firstName={}&lastName={}", firstName, lastName);
+    public MedicalRecord getMedicalRecordByName(@RequestParam String firstName,
+            @RequestParam String lastName) {
+        LOG.info("GET /medicalRecord/search – {} {}", firstName, lastName);
         MedicalRecord record = medicalRecordService.getMedicalRecordByName(firstName, lastName);
         if (record == null) {
-            logger.warn("MedicalRecord not found for {} {}", firstName, lastName);
+            LOG.warn("Aucun dossier médical pour {} {}", firstName, lastName);
         }
         return record;
     }
 
     /**
-     * POST /medicalRecord
-     * Ajoute un nouveau dossier médical
+     * POST /medicalRecord : ajoute un nouveau dossier.
+     *
+     * @param newRecord JSON représentant le dossier à créer
+     * @return le dossier créé ou {@code null} s’il existe déjà
      */
     @PostMapping
     public MedicalRecord addMedicalRecord(@RequestBody MedicalRecord newRecord) {
-        logger.info("POST /medicalRecord => adding record for {} {}", newRecord.getFirstName(),
-                newRecord.getLastName());
-        MedicalRecord created = medicalRecordService.addMedicalRecord(newRecord);
-        return created; // null si le dossier existe déjà
+        LOG.info("POST /medicalRecord – création dossier pour {} {}",
+                newRecord.getFirstName(), newRecord.getLastName());
+        return medicalRecordService.addMedicalRecord(newRecord);
     }
 
     /**
-     * PUT /medicalRecord
-     * Met à jour un dossier médical existant (identifié par firstName/lastName)
+     * PUT /medicalRecord : met à jour un dossier existant.
+     *
+     * @param updatedRecord JSON contenant les nouvelles valeurs
+     * @return le dossier mis à jour ou {@code null} si introuvable
      */
     @PutMapping
     public MedicalRecord updateMedicalRecord(@RequestBody MedicalRecord updatedRecord) {
-        logger.info("PUT /medicalRecord => updating record for {} {}", updatedRecord.getFirstName(),
-                updatedRecord.getLastName());
-        MedicalRecord updated = medicalRecordService.updateMedicalRecord(updatedRecord);
-        return updated; // null si le dossier n'a pas été trouvé
+        LOG.info("PUT /medicalRecord – mise à jour dossier pour {} {}",
+                updatedRecord.getFirstName(), updatedRecord.getLastName());
+        return medicalRecordService.updateMedicalRecord(updatedRecord);
     }
 
     /**
-     * DELETE /medicalRecord?firstName=x&lastName=y
-     * Supprime un dossier médical
+     * DELETE /medicalRecord : supprime un dossier.
+     *
+     * @param firstName prénom
+     * @param lastName  nom
      */
     @DeleteMapping
-    public void deleteMedicalRecord(@RequestParam String firstName, @RequestParam String lastName) {
-        logger.info("DELETE /medicalRecord?firstName={}&lastName={}", firstName, lastName);
+    public void deleteMedicalRecord(@RequestParam String firstName,
+            @RequestParam String lastName) {
+        LOG.info("DELETE /medicalRecord – {} {}", firstName, lastName);
         boolean removed = medicalRecordService.deleteMedicalRecord(firstName, lastName);
         if (!removed) {
-            logger.warn("No medical record found for {} {}. No deletion performed.", firstName, lastName);
+            LOG.warn("Suppression impossible : aucun dossier pour {} {}", firstName, lastName);
         }
     }
 }
