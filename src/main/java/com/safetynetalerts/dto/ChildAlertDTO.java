@@ -6,8 +6,8 @@ import java.util.List;
  * Représente un enfant résidant à une adresse donnée, tel que retourné
  * par l’endpoint /childAlert.
  *
- * @param otherHouseMembers liste des autres occupants du foyer
- *                          (prénom + nom), adultes ou enfants.
+ * liste des autres occupants du foyer
+ * (prénom + nom), adultes ou enfants.
  */
 public class ChildAlertDTO {
 

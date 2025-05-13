@@ -54,6 +54,7 @@ public class PersonService {
         }
 
         dataRepository.getPersons().add(newPerson);
+        dataRepository.saveData();
         logger.info("Added person: firstName={}, lastName={}, address={}, city={}, zip={}, phone={}, email={}",
                 newPerson.getFirstName(),
                 newPerson.getLastName(),
@@ -81,6 +82,7 @@ public class PersonService {
                 p.setZip(updated.getZip());
                 p.setPhone(updated.getPhone());
                 p.setEmail(updated.getEmail());
+                dataRepository.saveData();
                 return p;
             }
         }
@@ -99,6 +101,7 @@ public class PersonService {
         boolean removed = persons.removeIf(p -> p.getFirstName().equalsIgnoreCase(firstName)
                 && p.getLastName().equalsIgnoreCase(lastName));
         if (removed) {
+            dataRepository.saveData();
             logger.info("Deleted person: firstName={}, lastName={}", firstName, lastName);
         } else {
             logger.warn("Person {} {} not found. No deletion performed.", firstName, lastName);

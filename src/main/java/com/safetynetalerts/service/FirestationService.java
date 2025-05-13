@@ -93,6 +93,7 @@ public class FirestationService {
 
         if (!alreadyExists) {
             dataRepository.getFirestations().add(newMapping);
+            dataRepository.saveData();
             logger.info("Added new firestation mapping: address={}, station={}",
                     newMapping.getAddress(), newMapping.getStation());
             return newMapping;
@@ -113,6 +114,7 @@ public class FirestationService {
                 logger.info("Updating firestation for address={} from station={} to station={}",
                         f.getAddress(), f.getStation(), updatedMapping.getStation());
                 f.setStation(updatedMapping.getStation());
+                dataRepository.saveData();
                 return f;
             }
         }
@@ -128,6 +130,7 @@ public class FirestationService {
         List<Firestation> firestations = dataRepository.getFirestations();
         boolean removed = firestations.removeIf(f -> f.getAddress().equalsIgnoreCase(address));
         if (removed) {
+            dataRepository.saveData();
             logger.info("Deleted firestation mapping for address={}", address);
         } else {
             logger.warn("No firestation mapping found for address={}", address);

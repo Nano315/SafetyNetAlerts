@@ -54,6 +54,7 @@ public class MedicalRecordService {
         }
 
         dataRepository.getMedicalRecords().add(newRecord);
+        dataRepository.saveData();
         logger.info("Added new medical record for {} {}. Birthdate={}, medications={}, allergies={}",
                 newRecord.getFirstName(), newRecord.getLastName(),
                 newRecord.getBirthdate(), newRecord.getMedications(), newRecord.getAllergies());
@@ -75,6 +76,7 @@ public class MedicalRecordService {
                 mr.setBirthdate(updatedRecord.getBirthdate());
                 mr.setMedications(updatedRecord.getMedications());
                 mr.setAllergies(updatedRecord.getAllergies());
+                dataRepository.saveData();
                 return mr;
             }
         }
@@ -92,6 +94,7 @@ public class MedicalRecordService {
         boolean removed = medicalRecords.removeIf(m -> m.getFirstName().equalsIgnoreCase(firstName)
                 && m.getLastName().equalsIgnoreCase(lastName));
         if (removed) {
+            dataRepository.saveData();
             logger.info("Deleted medical record for {} {}", firstName, lastName);
         } else {
             logger.warn("No medical record found for {} {}. No deletion performed.", firstName, lastName);

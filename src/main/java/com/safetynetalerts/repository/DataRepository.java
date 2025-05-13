@@ -18,6 +18,12 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import com.fasterxml.jackson.databind.ObjectWriter;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 /**
  * Repository en mémoire : lit le fichier JSON au démarrage et expose
  * trois listes (persons, firestations, medicalRecords).
@@ -39,7 +45,7 @@ public class DataRepository {
     /* Chargement du fichier JSON */
     /* ------------------------------------------------------------------ */
 
-    /** Chemin du fichier, configuré dans application.properties. */
+    /** Chemin du fichier. */
     @Value("${data.file:classpath:data.json}")
     private Resource dataFile;
 
@@ -73,6 +79,31 @@ public class DataRepository {
 
         } catch (IOException e) {
             LOG.error("Erreur lors du chargement des données JSON", e);
+        }
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* Écrit l’état actuel des listes dans le fichier JSON */
+    /* ------------------------------------------------------------------ */
+
+    public synchronized void saveData() {
+        // On reconstruit un ObjectNode pour garder le même ordre de clés
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectNode root = mapper.createObjectNode();
+        root.set("persons", mapper.valueToTree(persons));
+        root.set("firestations", mapper.valueToTree(firestations));
+        root.set("medicalrecords", mapper.valueToTree(medicalRecords));
+
+        try {
+            // ⚠️ dataFile est un Resource ; on obtient son Path pour écrire dessus
+            Path path = Path.of(dataFile.getFile().toURI());
+            ObjectWriter writer = mapper.writerWithDefaultPrettyPrinter();
+            // overwrite le contenu
+            Files.writeString(path, writer.writeValueAsString(root),
+                    StandardOpenOption.TRUNCATE_EXISTING);
+            LOG.debug("JSON persisté : {}", path.toAbsolutePath());
+        } catch (IOException e) {
+            LOG.error("Impossible d’écrire le fichier JSON", e);
         }
     }
 
